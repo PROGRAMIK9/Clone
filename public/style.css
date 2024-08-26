@@ -236,13 +236,16 @@ a{
 
 .cardContainer{
     margin-top:10px;
-    display:flex;
-    gap:25px;
     position: absolute;
-    flex-wrap:wrap;
     height:500px;
     width:100%;
     overflow: auto;
+}
+.contt{
+    display:flex;
+    gap:25px;
+    width:100%;
+    flex-wrap:wrap;
 }
 .card{
     position: relative;
@@ -307,14 +310,14 @@ a{
 .topContent{
     display: flex;
     align-items: center;
-    gap:75%;
+    gap:65%;
 }
 
-.show{
+.shows{
     color:rgb(86,83,83);
 }
 
-.show:hover{
+.shows:hover{
     color:white;
     text-decoration: underline rgb(86,83,83);
 }
@@ -337,7 +340,8 @@ a{
 .socials{
     position: relative;
     margin-left:2%;
-    width:100%;
+    max-width:100%;
+
 }
 
 .heading{
@@ -378,9 +382,9 @@ li{
 }
 .body{
     display: flex;
+    max-width:100%;
     
 }
-
 .com{
     width:150px;
 }
@@ -418,7 +422,7 @@ li{
     background-color: rgb(86,83,83);
 }
 
-.playlist{
+.playlist,.playlist-1{
     overflow: auto;
     position: relative;
     height:80%;
@@ -682,9 +686,142 @@ ul li{
     display: block!important;
     color:green
 }
-@media (max-width:426px) and (min-width:320px) {
+.create{
+    position: absolute;
+    top:10%;;
+    left:35%;
+    height:600px;
+    width:400px;
+    padding: 0;
+    margin:0;
+    background-color: #252525;
+    border-radius: 20px;
+}
+.create h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.create label{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 10px ;
+    padding: 0;
+}
+.create input{
+    display: flex;
+    justify-content: center;
+    margin-left: 45px;
+    padding: 0;
+}
+
+.create .songs{
+    width:420px;
+    height: 400px;
+    overflow: auto;
+}
+.create .songs .song{
+    max-width:200px;
+}
+.addbuttons{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding:5%;
+    height:25px;
+    width:25px;
+    top:15px;
+    right:0px;
+}
+.mod{
+    position: absolute;
+    top:1%;
+    right:10px;;
+}
+.close{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white;
+    right:5%;
+    top:1%;
+}
+.searchbar{
+    position: absolute;
+    margin-top:50px;
+    width: 100%;
+    left:0;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+.searchbar form {
+    display: flex;
+    margin-left: 0;
+}
+.searchbar input{
+    width:50vw;
+    height: 30px;
+    background-color: #252525;
+    color: white;
+    margin: 0;
+}
+.searchbar button{
+    background-color: transparent;
+    margin-left:10px;
+    height:30px;
+    width:5vw;
+    border: none;
+    outline: none;
+}
+.results{
+    position: absolute;
+    top:200px;
+    width:100%;
+    height:500px;
+    overflow: auto;
+    margin-left: 100px;
+}
+.Playlist{
+    display: flex;
+    gap:50px;
+}
+.Playlist h1{
+    margin-top: 50px;
+}
+.Playlist img{
+    margin-top:20px;
+    width:100px;
+    height: 100px;
+}
+
+@media(max-width:426px) and (min-width:321px){
+    .logpage{
+        margin: 0;
+        left:10%;
+        top:25%;
+    }
+}
+@media (max-width:320px) and (min-width:320px){
+    .logpage{
+        left:3.5%;
+        margin: 0;
+    }
+}
+@media (max-width:450px) and (min-width:320px) {
+    body{
+        max-width: 100%;
+    }
+    .container{
+        max-width: 100%;
+        max-height: 100vh;
+    }
         .left .top{
-            height:135px;
+            height:20vh;
             border-bottom-right-radius: 0;
             margin-left: 0;
             padding: 3px;
@@ -692,9 +829,6 @@ ul li{
         .top .collapse{
             margin: 0;
             padding:5px;
-        }
-        .bottom{
-            display: none;
         }
         .collpase img{
             height:20px;
@@ -714,7 +848,7 @@ ul li{
         }
         .bot{
             border-top-right-radius: 0;
-            height:60vh;
+            height:70vh;
             margin-top: 0;
         }
         #signin{
@@ -756,6 +890,7 @@ ul li{
             height:8vh;
             position: absolute;
             bottom:5px;
+            z-index:300;
         }
         .songname{
             position: absolute;
@@ -780,7 +915,7 @@ ul li{
         }
         .card{
             width:85px;
-            height: 150px;
+            height: 140px;
             margin:0;
         }
         .card h3{
@@ -836,5 +971,25 @@ ul li{
             width:100%;
             height:100vh;
         }
-        
+        .create{
+            top:10%;
+            left:2%;
+            width:300px;
+            height:500px;
+            margin:0;
+            padding: 1%;
+        }
+        .create .songs{
+            height:300px;
+        }
+        .create input{
+            margin-left: 30px;
+        }
+        .signpage{
+            top:15%;
+            left:12%;
+            margin:0;;
+            width:300px;
+            height:400px;
+        }
 }

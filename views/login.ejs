@@ -166,7 +166,9 @@
 
                     </ul>
                 </div>
-
+                <div class="results show">
+                    <div id="no"></div>
+                </div>
             </div>
         </div>
         <div class="right blur">
@@ -200,6 +202,14 @@
                         Log in
                     </button>
                 </div>
+                <img class = "" src = "" alt="profile" id="profile">
+                <div class="user-info show">
+                    <ul>
+                        <li id="profile-name">guest</li>
+                        <a href="/logout"><li>Log Out</li></a>
+                        <a href="/delete"><li>Delete Account</li></a>
+                    </ul>
+        </div>
             </div>
             <div class="content">
                 <div class="topContent">
@@ -374,6 +384,7 @@
             </div>
         </div>
         <div class="logpage display" id="logon">
+            <a href="/redirect"><button class="close">X</button></a> 
             <form action="/login" method="POST">
                 <label>
                     <h1>Login</h1>

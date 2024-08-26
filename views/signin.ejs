@@ -199,6 +199,17 @@
                     <button id="login">
                         Log in
                     </button>
+                    <img class ="show" src = "" alt="profile" id="profile">
+                            <div class="user-info show">
+                                <ul>
+                                    <li id="profile-name">guest</li>
+                                    <a href="/logout"><li>Log Out</li></a>
+                                    <a href="/delete"><li>Delete Account</li></a>
+                                </ul>
+                    </div>
+                </div>
+                <div class="results show">
+                    <div id="no"></div>
                 </div>
             </div>
             <div class="content">
@@ -374,6 +385,7 @@
             </div>
         </div>
         <div class="signpage display">
+            <a href="/redirect"><button class="close">X</button></a> 
             <form action="/signin" method="POST">
                 <label>
                     <h1>Sign in</h1>
